@@ -1,26 +1,18 @@
 :root {
-    --accent-color: orangered;
-    --bg-color: bisque;
-    --main-color: orange;
-    --important-font: verdana;
-    --lesser-font: courier;
-    --rounded-corners: 1em;
+    --secondary-color: TBD;
+    --bg-color: TBD;
+    --primary-color: TBD;
+    --primary-font: TBD;
+    --secondary-font: TBD;
+
 }
 
 /* BASIC RULES */
 
 html {
-    background-color: var(--bg-color);
 }
 
 header {
-    text-align: center;
-    border: solid var(--accent-color);
-    border-radius: 1em;
-    margin: .5em;
-    padding: .3em;
-    background-color: var(--main-color);
-    border-width: .5em;
 }
 
 body {
@@ -35,34 +27,18 @@ body {
 /* NAV */
 
 nav {
-    text-align: center;
-    font-family: var(--important-font);
-    font-size: 16px;
-    font-weight: bold;
 }
 
 nav a:link {
-    background-color: var(--main-color);
-    border: solid var(--accent-color);
-    border-radius: 1em;
-    padding: .5em;
-    color: black;
-    text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
-    color: var(--accent-color)
 }
 
 nav a {
-    display: inline-block;
-    width: 12em;
 }
 
 .activePage {
-    font-size: 20px;
-    background: linear-gradient(#ff6666,yellow);
 }
 
 /* NAV END */
@@ -70,36 +46,25 @@ nav a {
 /* GENERAL RULES */
 
 a:hover {
-    text-decoration: underline wavy darkblue;
-    color: blue;
 }
 
-h1 {
-    font-family: var(--important-font);
-    font-variant: all-small-caps;    
+h1 { 
 }
 
 h2, h3 {
-    font-family: var(--important-font);
-    margin-top: 1em;
-    padding-top: 1em;
 }
 
 ul, li, td, th, tr{
-    font-family: var(--lesser-font);
 }
 
 li:nth-child(odd) {
-    background-color: var(--main-color);
 }
 
 li:nth-child(even) {
-    background-color: var(--accent-color);
 
 }
 
 li:hover {
-    font-weight: bold;
 }
 
 p.indent {
@@ -109,8 +74,6 @@ p.indent {
 }
 
 p {
-    font-family: var(--lesser-font);
-    max-width:75%;
 }
 
 /* GENERAL RULES END */
@@ -118,57 +81,33 @@ p {
 /* TABLE RULES */
 
 table tr:nth-child(even) td{
-    background-color: #cc5080;
 
 }
 
 table tr:nth-child(odd) td{
-    background-color: #cc5050;
 
 }
 
 table {
-    border: solid var(--accent-color);
-    border-radius: 1em;
-    margin: .5em;
-    padding: .3em;
-    border-width: .5em;
-    border-collapse: collapse;
-    width: 80%;
-    margin: auto;
 }
 
 
 thead {
-    text-decoration: underline brown;
-    font-weight: bolder;
 }
 
 tr, th, td {
-    text-align: center;
-    border: solid #ff9900;
-    margin: .2em;
-    padding: .2em;
-    background-color: #ffcc00;
-    border-width: .2em; 
 }
 
 tr:nth-child(odd) {
-    background-color: var(--main-color);
 }
 
 tr:nth-child(even) {
-    background-color: var(--accent-color);
 }
 
 tr:hover {
-    font-weight: bold;
-    text-decoration: underline brown;
 }
 
 caption {
-    font-family: var(--lesser-font);
-    text-decoration: underline var(--main-color);
 }
 
 /* TABLE RULES END */
@@ -176,62 +115,37 @@ caption {
 /* FORM RULES */
 
 fieldset {
-    margin: 1em;
-    border-radius: .5em;
-    border: solid var(--accent-color);
-    background-color: var(--main-color);
-    border-width: .2em;
-    width: 100%;
-    height: 90%;
-    transition: width 1s, height 1s;
 }
 
 fieldset:hover {
-    width: 95%;
-    height: 90%;
 }
 
 
 legend {
-    font-weight: bold;
-    font-size: 24px
 }
 
 form {
-    display: grid;
-    margin: auto;
 }
 
 input[type="text"], [type="number"]{
-    background-color: #ffff33;
-    float: left;
 }
 
 input[type="radio"], input[type="checkbox"] {
-    float: left;
 }
 
 label {
-    background-color: rgba(80,100,80, 0.5)
 }
 
 textarea {
-    background-color: #ffff33;
 }
 
 select {
-    background-color: #ffff33;
 }
 
 input[type="submit"] {
-    background-color: #ffff33;
-    padding: 15px 32px;
 }
 
 .mistake {
-    color: red;
-    font-weight: bold;
-    float: top;
 }
 
 /* FORM RULES END */
@@ -239,143 +153,25 @@ input[type="submit"] {
 /* VISUAL RULES */
 
 label {
-    font-weight: bold;
 }
 
 video {
-    max-width: 100%;
-    border-radius: var(--rounded-corners)
 }
 
 figure {
-    text-align:center;
-    border: solid var(--accent-color);
-    border-radius: var(--rounded-corners);
-    padding: .5em;
-    background-color: var(--main-color);
-    border-width:.3em;
-    max-width: 20em;
-    
-}
-
-figure.timelapse{
-    text-align: center;
-    border: solid var(--accent-color);
-    border-radius: var(--rounded-corners);
-    padding: .5em;
-    background-color: var(--main-color);
-    border-width:.3em;
-    max-width: 20em;
-    float: right;
 }
 
 figcaption{
-    font-family: var(--lesser-font);
-    margin: auto;
-    
 }
 
 img {
-    max-width: 100%;
-    border-radius: var(--rounded-corners);
-    margin: auto;
 }
 
 cite {
-    font-size: xx-small;
-}
-
-
-.formshadow {
-    text-shadow: 5px 5px 1px red;
-}
-
-.help, .waste{
-    box-shadow: 5px 5px 10px green;
-    padding: .5em;
-    margin: .5em;
-}
-
-.formimage {
-   font-size: 10pt;
-   position: relative;
-   animation-name: move;
-   animation-duration: 2s;
-}
-
-@keyframes move {
-   0%   {left:0px; top:0px; }
-   50%  {left:30px; top:0px; }
-   100% {left:0px; top:0px; }
 }
 
 /* VISUAL RULES END */
 
 /* GRID LAYOUT */
 
-.grid-layout article {
-    display: grid;
-    grid-template-areas: "waste help data";
-}
-
-.grid-layout .waste{
-    grid-column: 2 / 3;
-}
-
-.grid-layout .help{
-    grid-column: 3 / 3;
-}
-
-.grid-layout .data{
-    grid-column: 1 / 3;
-}
-
-.grid-layout article {
-    display: grid;
-    grid-template-areas: 
-        "landfills habitats"
-        "landfills habitats";
-}
-
-.grid-layout .landfills {
-    grid-column: 1 / 2;
-}
-
-.grid-layout .habitats {
-    grid-column: 2 / 2;
-}
-
-.grid-layout article {
-    display: grid;
-    grid-template-areas:
-        ". contact ."
-        "recycle helping important"
-        ". comments ."
-        ". finish .";
-    justify-items: center;
-}
-
-.grid-layout .contact {
-    grid-column: 2 / 2;
-}
-
-.grid-layout .recycle {
-    grid-column: 1 / 1;
-}
-
-.grid-layout .helping {
-    grid-column: 2 / 2;
-}
-
-.grid-layout .important {
-    grid-column: 3 / 3;
-}
-
-.grid-layout .comments {
-    grid-column: 2 / 2;
-}
-
-.grid-layout .finish {
-    grid-column: 2 / 2;
-}
 /* GRID LAYOUT END */
