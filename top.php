@@ -8,9 +8,10 @@ $path_parts = pathinfo($phpSelf);
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Recycling - Making the World a Better Place </title>
+        <title>UVM Photography Club</title>
         <meta name="author" content="Murphy Peisel and Jonah Cote">
-        <meta name="description" content="DESCRIPTION.">
+        <meta name="description" content="A place to host UVM's photography club where 
+                                          info about joining, a gallery, and more can all be found.">
         <link rel="stylesheet"
               href="css/custom.css?version=<?php print time(); ?>"
               type="text/css">
