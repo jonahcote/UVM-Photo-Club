@@ -35,6 +35,4 @@ $path_parts = pathinfo($phpSelf);
     include 'connect-DB.php';
     print PHP_EOL;
     include 'header.php';
-    print PHP_EOL;
-    include 'nav.php';
     ?>
