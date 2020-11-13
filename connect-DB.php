@@ -1,9 +1,9 @@
 <!-- Connecting -->
 <?php
-$databaseName = 'MPEISEL_labs';
+$databaseName = '';
 $dsn = 'mysql:host=webdb.uvm.edu;dbname=' . $databaseName;
-$username = 'mpeisel_writer';
-$password = 'yEbL0LSFPQLM';
+$username = '';
+$password = '';
 
 $pdo = new PDO($dsn, $username, $password);
 

@@ -9,10 +9,8 @@ $path_parts = pathinfo($phpSelf);
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recycling - Making the World a Better Place </title>
-        <meta name="author" content="Murphy Peisel">
-        <meta name="description" content="A website containing Murphy's third
-              lab about the environment, recycling awareness, and what we can
-              all do to make the world a better place for cs 008 at UVM.">
+        <meta name="author" content="Murphy Peisel and Jonah Cote">
+        <meta name="description" content="DESCRIPTION.">
         <link rel="stylesheet"
               href="css/custom.css?version=<?php print time(); ?>"
               type="text/css">

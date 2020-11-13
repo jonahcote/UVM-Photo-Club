@@ -1,8 +1,71 @@
 
 /*INDEX PAGE*/
+.grid-layout article {
+    justify-content: center;
+    grid-template-areas:
+        "waste"
+        "help"
+        "data";
+}
 
+table {
+    font-size: 10pt;
+}
+
+.grid-layout .waste{
+    grid-column: 1 / 1;
+}
+
+.grid-layout .help{
+    grid-column: 1 / 1;
+}
+
+.grid-layout .data{
+    grid-column: 1 / 1;
+}
 /*INDEX PAGE END*/
 
 /*FORM PAGE*/
+.grid-layout article {
+    justify-content: center;
+    grid-template-areas:
+        "contact"
+        "recycle"
+        "helping"
+        "important"
+        "comments"
+        "finish";
+}
 
+.grid-layout .contact {
+    grid-column: 1 / 1;
+}
+
+.grid-layout .recycle {
+    grid-column: 1 / 1;
+}
+
+.grid-layout .helping {
+    grid-column: 1 / 1;
+}
+
+.grid-layout .important {
+    grid-column: 1 / 1;
+}
+
+.grid-layout .comments {
+    grid-column: 1 / 1;
+}
+
+.grid-layout .finish {
+    grid-column: 1 / 1;
+}
+
+fieldset {
+    width: 85%;
+}
+
+fieldset:hover {
+    width: 86%;
+}
 /*FORM PAGE END*/
