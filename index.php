@@ -1,15 +1,16 @@
 <?php include "top-home.php"; ?>
-<main>
-    <section>
+<main class="flexbox-layout">
+    <section class="gallery">
         <a href="gallery.php">GALLERY</a>
     </section>
-    <section>
+    <section class="newline"></section>
+    <section class="about">
         <a href="about.php">ABOUT</a>
     </section>
-    <section>
+    <section class=contact>
         <a href="contact.php">CONTACT</a>
     </section>
-    <section>
+    <section class="join">
         <a href="join.php">JOIN</a>
     </section>
 </main>
