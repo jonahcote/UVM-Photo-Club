@@ -2,8 +2,8 @@
 
 <main>
     <section>
-        About the Club</p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper varius rutrum. Mauris ultricies augue felis, non fringilla felis tincidunt a. Suspendisse ornare turpis tortor, eu interdum est vestibulum vitae. Ut viverra magna eu massa ultrices, non euismod ligula tempus. Sed erat elit, facilisis non elit sit amet, iaculis blandit ante. Maecenas quis leo sed ipsum varius condimentum. Mauris vitae libero odio. Suspendisse quis porta arcu. Etiam vel laoreet dolor, ut volutpat dolor.</p>
+        <p>About the Club</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper varius rutrum. Mauris ultricies augue felis, non fringilla felis tincidunt a. Suspendisse ornare turpis tortor, eu interdum est vestibulum vitae. Ut viverra magna eu massa ultrices, non euismod ligula tempus. Sed erat elit, facilisis non elit sit amet, iaculis blandit ante. Maecenas quis leo sed ipsum varius condimentum. Mauris vitae libero odio. Suspendisse quis porta arcu. Etiam vel laoreet dolor, ut volutpat dolor.</p>
     </section>
     <section>
         <img src="camera.webp" alt="Camera on black background">
@@ -13,13 +13,13 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper varius rutrum. Mauris ultricies augue felis, non fringilla felis tincidunt a. Suspendisse ornare turpis tortor, eu interdum est vestibulum vitae. Ut viverra magna eu massa ultrices, non euismod ligula tempus. Sed erat elit, facilisis non elit sit amet, iaculis blandit ante. Maecenas quis leo sed ipsum varius condimentum. Mauris vitae libero odio. Suspendisse quis porta arcu. Etiam vel laoreet dolor, ut volutpat dolor.</p>
     </section>
     <section>
-        Founders group picture
+        <p>Founders group picture</p>
     </section>
     <section>
-        CONTACT 
+        <p>CONTACT</p>
     </section>
     <section>
-        JOIN
+        <p>JOIN</p>
     </section>
 </main>
 
