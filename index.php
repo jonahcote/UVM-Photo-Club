@@ -7,7 +7,7 @@
     <section class="about">
         <a href="about.php">ABOUT</a>
     </section>
-    <section class=contact>
+    <section class="contact">
         <a href="contact.php">CONTACT</a>
     </section>
     <section class="join">
