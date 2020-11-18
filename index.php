@@ -1,20 +1,26 @@
 <?php include "top-home.php"; ?>
 <main>
-    <a href="gallery.php">
-    <section class="gallery">
+    <a href="gallery.php"  class="gallery">
+    <section>
         <p>GALLERY</p>
     </section>
     </a>
     <section class="newline"></section>
-    <section class="about">
-        <a href="about.php">ABOUT</a>
+    <a href="about.php"  class="about">
+    <section>
+        <p>ABOUT</p>
     </section>
-    <section class="contact">
-        <a href="contact.php">CONTACT</a>
+    </a>
+    <a href="contact.php"  class="contact">
+    <section>
+        <p>CONTACT</p>
     </section>
-    <section class="join">
-        <a href="join.php">JOIN</a>
+    </a>
+    <a href="join.php"  class="join">
+    <section>
+        <p>JOIN</p>
     </section>
+    </a>
 </main>
 
 <?php include "footer.php"; ?>
