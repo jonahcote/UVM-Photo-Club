@@ -26,6 +26,10 @@ body {
 /* NAV */
 
 nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav a:link {
@@ -35,6 +39,10 @@ nav a:hover {
 }
 
 nav a {
+    flex: 1;
+    text-align: center;
+    background: white;
+    border: solid black;
 }
 
 .activePage {
@@ -173,9 +181,10 @@ cite {
 
 /* GRID LAYOUT */
 
-
-
 /* GRID LAYOUT END */
+
+/* FLEX LAYOUT */
+
 
 #index {
     margin: 0 auto;
@@ -212,3 +221,5 @@ main {
     border: solid black;
     height: 30vh
 }
+
+/* FLEX LAYOUT END */
