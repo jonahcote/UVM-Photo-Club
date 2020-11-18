@@ -19,7 +19,6 @@ body {
     margin: 0 auto;
     max-width: 50em;
     line-height: 1.5;
-    padding: 4em 1em;
 }
 
 /* BASIC RULES END */
@@ -182,10 +181,9 @@ cite {
     margin: 0 auto;
     max-width: 100%;
     line-height: 1.5;
-    padding: 4em 1em;
 }
 
-.flexbox-layout {
+main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -198,11 +196,11 @@ cite {
 }
 
 .about, .contact, .join {
-    flex: 0 1 33%;
+    flex: 1;
     text-align: center;
     background-color: white;
     border: solid black;
-    height: 45vh
+    height: 30vh
 }
 
 
@@ -212,5 +210,5 @@ cite {
     text-align: center;
     background: white;
     border: solid black;
-    height: 45vh
+    height: 30vh
 }
