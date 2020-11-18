@@ -1,8 +1,10 @@
 <?php include "top-home.php"; ?>
 <main>
+    <a href="gallery.php">
     <section class="gallery">
-        <a href="gallery.php">GALLERY</a>
+        <p>GALLERY</p>
     </section>
+    </a>
     <section class="newline"></section>
     <section class="about">
         <a href="about.php">ABOUT</a>
