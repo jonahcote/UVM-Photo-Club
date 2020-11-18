@@ -1,5 +1,5 @@
 <?php include "top-home.php"; ?>
-<main class="flexbox-layout">
+<main>
     <section class="gallery">
         <a href="gallery.php">GALLERY</a>
     </section>
