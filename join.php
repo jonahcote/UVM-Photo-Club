@@ -7,6 +7,10 @@ $dataIsGood = false;
 $first = '';
 $last = '';
 $email = '';
+$experience = '';
+$digital = '';
+$film = '';
+$instantFilm = '';
 
 // create sanitizing functions
 function getData($field) {
@@ -23,7 +27,7 @@ function verifyAlphaNum($testString) {
     return (preg_match("/^([[:alnum:]]|-|\.| |\'|&|;|#)+$/", $testString));
 }
 
-print '<p>Post Array:</p>:<p><pre>'; // REMOVE WHEN DONE
+print '<p>(REMOVE WHEN DONE) Post Array:</p>:<p><pre>'; // REMOVE WHEN DONE
 print_r($_POST);
 print'</pre>';
 
@@ -35,6 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var($email, FILTER_SANITIZE_EMAIL);
     $first = getData("txtFirstName");
     $last = getData("txtLastName");
+    $experience = getData("radExperience");
+    $digital = (int) getData("chkDigital");
+    $film = (int) getData("chkFilm");
+    $instantFilm = (int) getData("chkInstantFilm");
 
 
     // server side validation
@@ -57,6 +65,74 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     and a space. </p>' . PHP_EOL;
         $dataIsGood = false;
     }
+    
+    if ($experience != 'Master' AND $experience != 'Expert' AND 
+            $experience !='Intermediate' AND $experience != 'Novice') {
+        print '<p class="mistake">Please choose a valid option for experience.</p>' . PHP_EOL;
+        $dataIsGood = false;
+    }
+
+    $totalChecked = 0;
+    if ($digital != 1) {
+        $digital = 0;
+    }
+    $totalChecked += $digital;
+    
+    if ($film != 1) {
+        $film = 0;
+    }
+    $totalChecked += $film;
+    
+    if ($instantFilm != 1) {
+        $instantFilm = 0;
+    }
+    $totalChecked += $instantFilm;
+    
+    if ($totalChecked == 0) {
+        print '<p class="mistake">Please choose at least one checkbox.</p>';
+        $dataIsGood = false; 
+    }
+    if ($dataIsGood) {
+        try {
+            $sql = 'INSERT INTO tblPhotoContact
+                (fldFirstName, fldLastName, fldEmail,
+                fldExperience, fldDigital, fldFilm, fldInstantFilm)
+                VALUES
+                (?, ?, ?, ?, ?, ?, ?)';
+            $statement = $pdo->prepare($sql);
+            $params = array($first, $last, $email, $experience,
+                $digital, $film, $instantFilm);
+            
+            if ($statement->execute($params)) {
+                print '<p>Record was successfully saved. Thank you!</p>';
+                $to = $email;
+                $from = 'Murphy Peisel CS008 <mpeisel@uvm.edu>';
+                $subject = 'Recycling Mailing List';
+                
+                $mailMessage = '<p style="font: 16pt verdana;">Thank you ';
+                $mailMessage .= 'for signing up for my mailing list!</p><p></p>';
+                $mailMessage .= '<p>Thanks again,</p><p>Murphy Peisel</p>';
+                
+                $headers = "MIME-Version 1.0\r\n";
+                $headers .= "Content-type: text/html; charset=utf-8\r\n";
+                $headers .= "From: " . $from . "\r\n";
+                $mailSent = mail($to, $subject, $mailMessage, $headers);
+                
+                if ($mailSent) {
+                    print "<p>Email was sent! Here is what the email said:</p>";
+                    print $mailMessage;
+                }
+            } else {
+                    print '<p>Record was NOT successfully saved.</p>';
+            }
+                
+        } catch (Exception $e) {
+                    print '<p>Couldn\'t insert the record, please contact the site owner.</p>';
+        }         
+    }            
+} // form submitted
+if ($dataIsGood) {
+    print '<h2>Thank you! Your information was successfully received!</h2>';
 }
 ?>
 
@@ -97,7 +173,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="radMaster">Master</label>
                     <input type="radio" name="radExperience" id="radMaster" value="Master" required
                     <?php
-                    if ($recycle == 'Master') {
+                    if ($experience == 'Master') {
                         print 'checked';
                     }
                     ?>>
@@ -106,7 +182,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="radExpert">Expert</label>
                     <input type="radio" name="radExperience" id="radExpert" value="Expert" required
                     <?php
-                    if ($recycle == 'Expert') {
+                    if ($experience == 'Expert') {
                         print 'checked';
                     }
                     ?>>
@@ -115,7 +191,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="radIntermediate">Intermediate</label>
                     <input type="radio" name="radExperience" id="radIntermediate" value="Intermediate"
                     <?php
-                    if ($recycle == 'Intermediate') {
+                    if ($experience == 'Intermediate') {
                         print 'checked';
                     }
                     ?>>
@@ -123,11 +199,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p>
                     <label for="radNovice">Novice</label>
                     <input type="radio" name="radExperience" id="radNovice" value="Novice"
-                           <?php
-                           if ($recycle == 'Novice') {
-                               print 'checked';
-                           }
-                           ?>>
+                    <?php
+                    if ($experience == 'Novice') {
+                        print 'checked';
+                    }
+                    ?>>
+                </p>
+            </fieldset>
+            <fieldset class="phototypes">
+                <legend>What Types of Photography Are You Interested In? (choose at least 1)</legend>
+                <p>
+                    <label for="chkDigital">Digital</label>
+                    <input type="checkbox" name="chkDigital" id="chkDigital" value="1"
+                    <?php if ($digital == 1) { print 'checked'; }
+                    ?>>
+                </p>
+                <p>
+                    <label for="chkFilm">Film (Small/Medium/Large Format)</label>
+                    <input type="checkbox" name="chkFilm" id="chkFilm" value="1"
+                    <?php if ($film == 1) { print 'checked'; }
+                    ?>>
+                </p>
+                <p>
+                    <label for="chkInstantFilm">Instant Film</label>
+                    <input type="checkbox" name="chkInstantFilm" id="chkInstantFilm" value="1"
+                    <?php if ($instantFilm == 1) { print 'checked'; }
+                    ?>>
+                </p>
+            </fieldset>
+            <fieldset class="finish">
+                <p>
+                    <input type="submit" name="btnSubmit" id="btnSubmit" value="Finish">
                 </p>
             </fieldset>
         </form>

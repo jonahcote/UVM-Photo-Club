@@ -6,22 +6,23 @@ include 'top.php'
     <p>Create Table SQL</p>
     
     <pre>
-        CREATE TABLE tblData(
-        pmkCategoryId INT AUTO_INCREMENT PRIMARY KEY,
-        fldPathway VARCHAR(200),
-        fld2010 VARCHAR(200),
-        fld2015 VARCHAR(200),
-        fld2016 VARCHAR(200),
-        fld2017 VARCHAR(200)
-    );
+    CREATE TABLE tblPhotoContact (
+        pmkPhotoContact INT AUTO_INCREMENT PRIMARY KEY,
+        fldFirstName VARCHAR(50),
+        fldLastName VARCHAR(50),
+        fldEmail VARCHAR(75),
+        fldExperience VARCHAR(50),
+        fldDigital TINYINT(1),
+        fldFilm TINYINT(1),
+        fldInstantFilm TINYINT(1)
+    )
 
-    INSERT INTO tblData (fldPathway, fld2010, fld2015, fld2016, fld2017) VALUES
-
-    ('Total Food Waste', '35,740', '39,730', '40,310', '40,670'),
-
-    ('Composted', '970', '2,100', '2,150', '2,570'),
-
-    ('Landfilled', '28,620', '30,250', '30,680', '30,630');
+    INSERT INTO tblPhotoContact
+    (fldFirstName, fldLastName, fldEmail,
+    fldExperience, fldDigital, fldFilm, fldInstantFilm)
+    VALUES
+    ('Murphy', 'Peisel', 'mpeisel@uvm.edu',
+    'Intermediate', '1', '1', '1')
 
     CREATE TABLE tblRecyclingSurvey (
         pmkReyclingSurveyId INT AUTO_INCREMENT PRIMARY KEY,
