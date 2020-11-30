@@ -66,6 +66,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $dataIsGood = false;
     }
     
+    if ($email == "") {
+        print '<p class="mistake">Please enter your email address.</p>';
+        $dataIsGood = false;
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        print '<p class="mistake">Your email address appears to be incorrect.</p>';
+        $dataIsGood = false;
+    }
+    
     if ($experience != 'Master' AND $experience != 'Expert' AND 
             $experience !='Intermediate' AND $experience != 'Novice') {
         print '<p class="mistake">Please choose a valid option for experience.</p>' . PHP_EOL;
@@ -105,17 +113,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             if ($statement->execute($params)) {
                 print '<p>Record was successfully saved. Thank you!</p>';
+                
                 $to = $email;
-                $from = 'Murphy Peisel CS008 <mpeisel@uvm.edu>';
-                $subject = 'Recycling Mailing List';
+                $from = 'Unofficial UVM Photography Club <mpeisel@uvm.edu>';
+                $subject = 'UVM Photography Club Form';
                 
-                $mailMessage = '<p style="font: 16pt verdana;">Thank you ';
-                $mailMessage .= 'for signing up for my mailing list!</p><p></p>';
-                $mailMessage .= '<p>Thanks again,</p><p>Murphy Peisel</p>';
+                $mailMessage = '<html><body>';
+                $mailMessage .= '<p>test</p>';
+                $mailMessage .= '</body></html>';
                 
-                $headers = "MIME-Version 1.0\r\n";
+                $headers = "MIME-Version: 1.0\r\n";
                 $headers .= "Content-type: text/html; charset=utf-8\r\n";
                 $headers .= "From: " . $from . "\r\n";
+                
                 $mailSent = mail($to, $subject, $mailMessage, $headers);
                 
                 if ($mailSent) {
@@ -132,12 +142,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }            
 } // form submitted
 if ($dataIsGood) {
-    print '<h2>Thank you! Your information was successfully received!</h2>';
+    print '<h2>Thank you for filling out the form! Your information was '
+    . ' successfully received! We will contact you about your response'
+            . ' shortly!</h2>';
 }
 ?>
 
 
 <main>
+    <h1>CHANGE EMAIL CONTENTS!!!</h1>
     <article>
         <form action="#" method="POST">
             <fieldset class="userinfo">
