@@ -1,4 +1,5 @@
-.column {
+/* Have two columns */
+.galleryColumn {
   flex: 50%;
   max-width: 50%;
 }
