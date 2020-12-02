@@ -27,10 +27,6 @@ function verifyAlphaNum($testString) {
     return (preg_match("/^([[:alnum:]]|-|\.| |\'|&|;|#)+$/", $testString));
 }
 
-print '<p>(REMOVE WHEN DONE) Post Array:</p>:<p><pre>'; // REMOVE WHEN DONE
-print_r($_POST);
-print'</pre>';
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dataIsGood = true;
 
@@ -119,7 +115,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $subject = 'UVM Photography Club Form';
                 
                 $mailMessage = '<html><body>';
-                $mailMessage .= '<p>test</p>';
+                $mailMessage .= '<h2>Thank you for filling out our interest form!</h2>';
+                $mailMessage .= '<h3>We will contact you soon!</h3>';
+                $mailMessage .= '<p style = "font-size: 12pt;">Feel free to contact';
+                $mailMessage .= ' Murphy (mpeisel@uvm.ed) if you have any questions.</p>';
+                $mailMessage .= '<p style="font-size: 16pt;font-style: italic;">Capere Lumina,</p>';
+                $mailMessage .= '<p style = "font-size: 12pt;">UVM Photography Club</p>';
                 $mailMessage .= '</body></html>';
                 
                 $headers = "MIME-Version: 1.0\r\n";
@@ -142,15 +143,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }            
 } // form submitted
 if ($dataIsGood) {
-    print '<h2>Thank you for filling out the form! Your information was '
-    . ' successfully received! We will contact you about your response'
+    print '<h2>Thank you for filling out the interest form! Your information was'
+    . ' successfully received! We will contact you about your responses'
             . ' shortly!</h2>';
 }
 ?>
 
 
 <main>
-    <h1>CHANGE EMAIL CONTENTS!!!</h1>
+    <h1>Interest Form</h1>
     <article>
         <form action="#" method="POST">
             <fieldset class="userinfo">

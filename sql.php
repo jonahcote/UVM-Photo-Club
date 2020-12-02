@@ -17,35 +17,21 @@ include 'top.php'
         fldInstantFilm TINYINT(1)
     )
 
-    INSERT INTO tblPhotoContact
-    (fldFirstName, fldLastName, fldEmail,
-    fldExperience, fldDigital, fldFilm, fldInstantFilm)
-    VALUES
-    ('Murphy', 'Peisel', 'mpeisel@uvm.edu',
-    'Intermediate', '1', '1', '1')
-
-    CREATE TABLE tblRecyclingSurvey (
-        pmkReyclingSurveyId INT AUTO_INCREMENT PRIMARY KEY,
-        fldFirstName VARCHAR(50),
-        fldLastName VARCHAR(50),
-        fldEmail VARCHAR(75),
-        fldAge VARCHAR(50),
-        fldRecycle VARCHAR(50),
-        fldCompost TINYINT(1),
-        fldReuse TINYINT(1),
-        fldLight TINYINT(1),
-        fldTransit TINYINT(1),
-        fldIssue VARCHAR(50),
-        fldComments TEXT
+    CREATE TABLE tblPhotoMemberInfo(
+    pmkMemberId INT AUTO_INCREMENT PRIMARY KEY,
+    fldName VARCHAR(200),
+    fldEmail VARCHAR(200),
+    fldPosition VARCHAR(200)
     )
-    
-    INSERT INTO tblRecyclingSurvey
-    (fldFirstName, fldLastName, fldEmail, fldAge,
-    fldRecycle, fldCompost, fldReuse, fldLight,
-    fldTransit, fldIssue, fldComments)
-    VALUES
-    ('Murphy', 'Peisel', 'mpeisel@uvm.edu', '19',
-    'Yes', '1', '1', '1', '1', 'globalwarming', 'no comments')
+
+    SELECT fldName, fldEmail, fldPosition FROM tblPhotoMemberInfo
+
+    INSERT INTO tblPhotoMemberInfo (fldName, fldEmail, fldPosition) VALUES
+    ('Murphy Peisel', 'Murphy.Peisel@uvm.edu', 'Grandmaster'),
+    ('Jonah Cote', 'Jonah.Cote@uvm.edu', 'COO'),
+    ('Brandon Schoenfeld', 'Brandon Schoenfeld', 'Intern'),
+    ('Fiona Duckworth', 'Fiona.Duckworth@uvm.edu', 'Intern\'s Intern'),
+    ('Adam Zuchowski', 'Adam.Zuchowski@uvm.edu', 'Waterboy');
 
     </pre>
 </main>
