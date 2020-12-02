@@ -172,6 +172,7 @@ figcaption{
 }
 
 img {
+    max-width: 100%
 }
 
 cite {
@@ -179,12 +180,7 @@ cite {
 
 /* VISUAL RULES END */
 
-/* GRID LAYOUT */
-
-/* GRID LAYOUT END */
-
 /* FLEX LAYOUT */
-
 
 #index {
     margin: 0 auto;
@@ -192,7 +188,7 @@ cite {
     line-height: 1.5;
 }
 
-main {
+#index main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -221,5 +217,18 @@ main {
     border: solid black;
     height: 30vh
 }
-
 /* FLEX LAYOUT END */
+
+/* GRID LAYOUT */
+
+#about main {
+    display: grid;
+    grid-template-areas:
+        'aboutclub foundersimg'
+        'cameraimg aboutfounders';
+}
+
+.aboutclub, .foundersimg, .cameraimg, .aboutfounders {
+    padding: .5em;
+}
+/* GRID LAYOUT END */
