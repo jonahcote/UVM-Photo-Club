@@ -15,7 +15,7 @@
             <p>As the club doesn't exist yet, there is no history.</p>
         </section>
         <section>
-            <img src="image/camera.webp" alt="Camera on black background">
+            <img src="IMG SRC" alt="Camera on black background">
         </section>
     </article>
     <article>
