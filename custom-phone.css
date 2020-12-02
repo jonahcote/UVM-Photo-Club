@@ -1,5 +1,5 @@
 /* Stack vertically in one big column */  
 .galleryColumn {
-    flex: 100%;
-    max-width: 100%;
-  }
+  flex: 100%;
+  max-width: 100%;
+}
