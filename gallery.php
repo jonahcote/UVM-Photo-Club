@@ -6,14 +6,14 @@
             <section class="galleryColumn">
                 <img src="images/baseball.jpg">
                 <img src="images/burlington.jpg">
-                <img src="images/flags">
+                <img src="images/flags.jpg">
             </section>
-            <section class="column">
+            <section class="galleryColumn">
                 <img src="images/groton.jpg">
                 <img src="images/lowell.jpg">
                 <img src="images/roofs.jpg">
             </section>
-            <section class="column">
+            <section class="galleryColumn">
                 <img src="images/santa.jpg">
                 <img src="images/sky.jpg">
                 <img src="images/tree.jpg">
