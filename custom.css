@@ -96,25 +96,39 @@ table tr:nth-child(odd) td{
 }
 
 table {
+    border: solid black;
+    border-radius: 1em;
+    margin: .5em;
+    padding: .3em;
+    border-width: .5em;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
 }
 
-
-thead {
-}
-
-tr, th, td {
+tr {
+    text-align: center;
+    border: solid black;
+    margin: .2em;
+    padding: .2em;
+    border-width: .2em; 
 }
 
 tr:nth-child(odd) {
+    background-color: green;
 }
 
 tr:nth-child(even) {
+    background-color: gold;
 }
 
 tr:hover {
+    text-decoration: underline black;
 }
 
 caption {
+    font-size: 16pt;
+    font-weight: bold;
 }
 
 /* TABLE RULES END */
@@ -222,6 +236,7 @@ cite {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  justify-content: center;
 }
 
 
@@ -231,7 +246,7 @@ cite {
   padding: 0 4px;
 }
 
-.galleyColumn img {
+.galleryColumn img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
