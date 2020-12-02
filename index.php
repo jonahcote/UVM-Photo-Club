@@ -1,6 +1,6 @@
 <?php include "top-home.php"; ?>
 <main>
-    <a href="gallery.php"  class="gallery">
+    <a href="gallery.php"  class="galleryLink">
     <section>
         <p>GALLERY</p>
     </section>
