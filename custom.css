@@ -2,17 +2,30 @@
     --secondary-color: TBD;
     --bg-color: TBD;
     --primary-color: TBD;
-    --primary-font: TBD;
-    --secondary-font: TBD;
-
+    --primary-font: 'Bungee Shade', serif;
+    --secondary-font: 'JetBrains Mono', monospace;
 }
-
 /* BASIC RULES */
 
 html {
+    font-family: var(--secondary-font);
 }
 
 header {
+}
+
+h1 {
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+h3 {
+    font-family: Verdana;
 }
 
 body {
@@ -30,6 +43,9 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.5;
 }
 
 nav a:link {
@@ -75,12 +91,13 @@ li:hover {
 }
 
 p.indent {
-    font-family: var(--lesser-font);
+        font-family: var(--secondary-font);
     max-width:75%;
     text-indent: 3em;
 }
 
 p {
+    font-family: var(--secondary-font);
 }
 
 /* GENERAL RULES END */
@@ -173,20 +190,30 @@ input[type="submit"] {
 
 /* VISUAL RULES */
 
-label {
-}
-
-video {
-}
-
 figure {
+    width: 100%;
 }
 
 figcaption{
+    text-align: center;
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#gallery {
+    margin: 0 auto;
+    max-width: 100%;
+    line-height: 1.5;
+}
+
+#gallery h2, p{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.5;   
 }
 
 cite {
@@ -200,6 +227,19 @@ cite {
     margin: 0 auto;
     max-width: 100%;
     line-height: 1.5;
+    max-height: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+}
+
+#index img {
+   filter: grayscale(100%);
+   transition: all .75s ease;
+}
+
+#index img:hover {
+    filter: grayscale(0%);
 }
 
 #index main {
@@ -207,6 +247,31 @@ cite {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.crop {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.crop img {
+
+}
+
+/* Center text over image, from W3Schools */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
 }
 
 .newline {
@@ -235,19 +300,19 @@ cite {
 .galleryRow {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 1em;
   justify-content: center;
 }
 
 
 .galleryColumn {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 1em;
 }
 
 .galleryColumn img {
-  margin-top: 8px;
+  margin-top: 1em;
   vertical-align: middle;
   width: 100%;
 }
