@@ -2,7 +2,7 @@
 
 <main>
     <article>
-        <section>
+        <section class="aboutclub">
             <h2>About the Club</h2>
             <h3>Mission Statement</h3>
             <p>The UVM Photography Club operates on three core missions:</p>
@@ -14,12 +14,12 @@
             <h3>History</h3>
             <p>As the club doesn't exist yet, there is no history.</p>
         </section>
-        <section>
-            <img src="IMG SRC" alt="Camera on black background">
+        <section class="cameraimg">
+            <img src="images/camera.webp" alt="Camera on black background">
         </section>
     </article>
     <article>
-        <section>
+        <section class="aboutfounders">
             <h2>About the founders:</h2>
             <h3>Murphy Peisel, Grandmaster</h3>
             <p></p>
@@ -29,7 +29,7 @@
             <h3>Brandon Schoenfeld, Intern</h3>
             <p>Brandon is, by far, the most experienced member of the team.  He's run a photography club before.  As such, he's the lowest ranking member of the club and mainly gets the other two coffee.</p>
         </section>
-        <section>
+        <section class="foundersimg">
             <p>Founders group picture</p>
         </section>
     </article>
