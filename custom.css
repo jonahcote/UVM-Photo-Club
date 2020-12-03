@@ -287,7 +287,10 @@ cite {
     height: 30vh
 }
 
-
+.activePage {
+    background-color: lightgray;
+    color: black;
+}
 
 .galleryLink {
     flex: 0 1 100%;
