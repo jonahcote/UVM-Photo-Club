@@ -2,14 +2,15 @@
     --secondary-color: TBD;
     --bg-color: TBD;
     --primary-color: TBD;
-    --primary-font: TBD;
-    --secondary-font: TBD;
+    --primary-font: 'Bungee Shade', serif;
+    --secondary-font: 'JetBrains Mono', monospace;
 
 }
 
 /* BASIC RULES */
 
 html {
+    font-family: var(--secondary-font);
 }
 
 header {
@@ -55,10 +56,18 @@ nav a {
 a:hover {
 }
 
-h1 { 
+h1 {
+    font-family: var(--primary-font);
+    text-align: center;
 }
 
-h2, h3 {
+h2 {
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+h3 {
+    font-family: Verdana;
 }
 
 ul, li, td, th, tr{
@@ -75,12 +84,13 @@ li:hover {
 }
 
 p.indent {
-    font-family: var(--lesser-font);
+    font-family: var(--secondary-font);
     max-width:75%;
     text-indent: 3em;
 }
 
 p {
+    font-family: var(--secondary-font);
 }
 
 /* GENERAL RULES END */
@@ -106,7 +116,7 @@ table {
     margin: auto;
 }
 
-tr, td {
+tr {
     text-align: center;
     border: solid black;
     margin: .2em;
@@ -186,7 +196,8 @@ figcaption{
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
+    max-height: 100%;
 }
 
 cite {
@@ -199,7 +210,20 @@ cite {
 #index {
     margin: 0 auto;
     max-width: 100%;
-    line-height: 1.5;
+    max-height: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    /*line-height: 1.5;*/
+}
+
+#index img {
+   filter: grayscale(100%);
+   transition: all .75s ease;
+}
+
+#index img:hover {
+    filter: grayscale(0%);
 }
 
 #index main {
@@ -222,7 +246,31 @@ cite {
     height: 30vh
 }
 
+.crop {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
 
+.crop img {
+    
+}
+
+
+/* Center text over image, from W3Schools */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
 
 .galleryLink {
     flex: 0 1 100%;
