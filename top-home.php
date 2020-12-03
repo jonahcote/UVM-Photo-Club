@@ -24,6 +24,8 @@ $path_parts = pathinfo($phpSelf);
               href="css/custom-phone.css?version=<?php print time(); ?>"
               type="text/css">
         <link rel="icon" type="image/jpg" href="image/logo.jpg">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=JetBrains+Mono&display=swap" rel="stylesheet"> 
     </head>
     
     <?php
