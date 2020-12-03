@@ -1,7 +1,5 @@
 <!-- ####################### FOOTER ################################## -->
 <footer>
-    <p class="indent"><a href=
-                         "../index.php">Site Map (Main index)</a></p>
-                         <p>Jonah Cote, Murphy Peisel</p>
+    <p><a href="https://jwcote.w3.uvm.edu/cs008/final/index.php">Jonah Cote</a>, <a href="https://mpeisel.w3.uvm.edu/cs008/final/index.php">Murphy Peisel</a></p>
 </footer>
 
