@@ -1,7 +1,4 @@
 :root {
-    --secondary-color: TBD;
-    --bg-color: TBD;
-    --primary-color: TBD;
     --primary-font: 'Bungee Shade', serif;
     --secondary-font: 'JetBrains Mono', monospace;
 }
@@ -9,9 +6,6 @@
 
 html {
     font-family: var(--secondary-font);
-}
-
-header {
 }
 
 h1 {
@@ -48,12 +42,6 @@ nav {
     line-height: 1.5;
 }
 
-nav a:link {
-}
-
-nav a:hover {
-}
-
 nav a {
     flex: 1;
     text-align: center;
@@ -68,28 +56,6 @@ nav a {
 
 /* GENERAL RULES */
 
-a:hover {
-}
-
-h1 { 
-}
-
-h2, h3 {
-}
-
-ul, li, td, th, tr{
-}
-
-li:nth-child(odd) {
-}
-
-li:nth-child(even) {
-
-}
-
-li:hover {
-}
-
 p.indent {
         font-family: var(--secondary-font);
     max-width:75%;
@@ -103,14 +69,6 @@ p {
 /* GENERAL RULES END */
 
 /* TABLE RULES */
-
-table tr:nth-child(even) td{
-
-}
-
-table tr:nth-child(odd) td{
-
-}
 
 table {
     border: solid black;
@@ -152,37 +110,6 @@ caption {
 
 /* FORM RULES */
 
-fieldset {
-}
-
-fieldset:hover {
-}
-
-
-legend {
-}
-
-form {
-}
-
-input[type="text"], [type="number"]{
-}
-
-input[type="radio"], input[type="checkbox"] {
-}
-
-label {
-}
-
-textarea {
-}
-
-select {
-}
-
-input[type="submit"] {
-}
-
 .mistake {
 }
 
@@ -214,9 +141,6 @@ img {
     margin: 0 auto;
     max-width: 50em;
     line-height: 1.5;   
-}
-
-cite {
 }
 
 /* VISUAL RULES END */
@@ -255,9 +179,6 @@ cite {
     overflow: hidden;
 }
 
-.crop img {
-
-}
 
 /* Center text over image, from W3Schools */
 .container {
