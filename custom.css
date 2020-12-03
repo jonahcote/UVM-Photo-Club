@@ -6,6 +6,8 @@
 
 html {
     font-family: var(--secondary-font);
+    background-color: black;
+    color: white;
 }
 
 h1 {
@@ -50,6 +52,8 @@ nav a {
 }
 
 .activePage {
+    background-color: lightgray;
+    color: black;
 }
 
 /* NAV END */
@@ -57,7 +61,7 @@ nav a {
 /* GENERAL RULES */
 
 p.indent {
-        font-family: var(--secondary-font);
+    font-family: var(--secondary-font);
     max-width:75%;
     text-indent: 3em;
 }
@@ -71,7 +75,7 @@ p {
 /* TABLE RULES */
 
 table {
-    border: solid black;
+    border: solid lightgray;
     border-radius: 1em;
     margin: .5em;
     padding: .3em;
@@ -153,8 +157,6 @@ img {
     line-height: 1.5;
     max-height: 100%;
     height: auto;
-    background-color: black;
-    color: white;
 }
 
 #index img {
@@ -206,11 +208,6 @@ img {
     background-color: white;
     border: solid black;
     height: 30vh
-}
-
-.activePage {
-    background-color: lightgray;
-    color: black;
 }
 
 .galleryLink {
