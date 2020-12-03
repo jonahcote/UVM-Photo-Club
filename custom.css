@@ -106,7 +106,7 @@ table {
     margin: auto;
 }
 
-tr {
+tr, td {
     text-align: center;
     border: solid black;
     margin: .2em;
