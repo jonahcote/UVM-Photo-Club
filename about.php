@@ -22,7 +22,9 @@
         <section class="aboutfounders">
             <h2>About the founders:</h2>
             <h3>Murphy Peisel, Grandmaster</h3>
-            <p>Murphy has no experience </p>
+            <p>Murphy has no experience running a photography club, as such, he 
+            is the highest ranking member of the club and drinks Brandon's 
+            coffee.</p>
             <h3>Jonah Cote, COO</h3>
             <p>Born in the rugged North East Kingdom of Vermont, Jonah knows absolutely nothing about photography.  He hopes to learn about cameras beyond the one in his phone from Murphy the Master.</p>
             <p>Jonah handles new member recruitment, graphics, and outreach.</p>
