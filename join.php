@@ -118,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mailMessage .= '<h2>Thank you for filling out our interest form!</h2>';
                 $mailMessage .= '<h3>We will contact you soon!</h3>';
                 $mailMessage .= '<p style = "font-size: 12pt;">Feel free to contact';
-                $mailMessage .= ' Murphy (mpeisel@uvm.ed) if you have any questions.</p>';
+                $mailMessage .= ' Murphy (mpeisel@uvm.edu) if you have any questions.</p>';
                 $mailMessage .= '<p style="font-size: 16pt;font-style: italic;">Capere Lumina,</p>';
                 $mailMessage .= '<p style = "font-size: 12pt;">UVM Photography Club</p>';
                 $mailMessage .= '</body></html>';
