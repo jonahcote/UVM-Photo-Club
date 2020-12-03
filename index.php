@@ -25,6 +25,9 @@
         <p class="centered">JOIN</p>
     </section>
     </a>
+    
+    <p>Images from UVM Instagram</p>
+    
 </main>
 
 <?php include "footer.php"; ?>
