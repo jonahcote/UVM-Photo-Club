@@ -16,7 +16,7 @@ $path_parts = pathinfo($phpSelf);
               href="css/custom.css?version=<?php print time(); ?>"
               type="text/css">
         <link rel="stylesheet"
-              media="(max-width: 648px)"
+              media="(max-width: 750px)"
               href="css/custom-tablet.css?version=<?php print time(); ?>"
               type="text/css">
         <link rel="stylesheet"
