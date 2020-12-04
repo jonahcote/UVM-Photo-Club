@@ -1,0 +1,256 @@
+:root {
+    --primary-font: 'Averia Serif Libre', serif;
+    --secondary-font: 'JetBrains Mono', monospace;
+}
+/* BASIC RULES */
+
+html {
+    font-family: var(--secondary-font);
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+h3 {
+    font-family: Verdana;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.5;
+}
+
+/* BASIC RULES END */
+
+/* NAV */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.5;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    background: white;
+    border: solid black;
+}
+
+.activePage {
+    background-color: lightgray;
+    color: black;
+}
+
+/* NAV END */
+
+/* GENERAL RULES */
+
+p.indent {
+    font-family: var(--secondary-font);
+    max-width:75%;
+    text-indent: 3em;
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+
+/* GENERAL RULES END */
+
+/* TABLE RULES */
+
+table {
+    border: solid lightgray;
+    border-radius: 1em;
+    margin: .5em;
+    padding: .3em;
+    border-width: .5em;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+tr, td {
+    text-align: center;
+    border: solid black;
+    margin: .2em;
+    padding: .2em;
+    border-width: .2em;
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: green;
+}
+
+tr:nth-child(even) {
+    background-color: gold;
+}
+
+tr:hover {
+    text-decoration: underline black;
+}
+
+caption {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+/* TABLE RULES END */
+
+/* FORM RULES */
+
+.mistake {
+}
+
+/* FORM RULES END */
+
+/* VISUAL RULES */
+
+figure {
+    width: 100%;
+}
+
+figcaption{
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#gallery {
+    margin: 0 auto;
+    max-width: 100%;
+    line-height: 1.5;
+}
+
+#gallery h2, p{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.5;   
+}
+
+/* VISUAL RULES END */
+
+/* FLEX LAYOUT */
+
+#index {
+    margin: 0 auto;
+    max-width: 100%;
+    line-height: 1.5;
+    max-height: 100%;
+    height: auto;
+}
+
+#index img {
+   filter: grayscale(100%);
+   transition: all .75s ease;
+}
+
+#index img:hover {
+    filter: grayscale(0%);
+}
+
+#index main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.crop {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+
+/* Center text over image, from W3Schools */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+.newline {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.about, .contact, .join {
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    border: solid black;
+    height: 30vh
+}
+
+.galleryLink {
+    flex: 0 1 100%;
+    text-align: center;
+    background: white;
+    border: solid black;
+    height: 30vh
+}
+
+.galleryRow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1em;
+  justify-content: center;
+}
+
+
+.galleryColumn {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 1em;
+}
+
+.galleryColumn img {
+  margin-top: 1em;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* FLEX LAYOUT END */
+
+/* GRID LAYOUT */
+
+#about main {
+    display: grid;
+    grid-template-areas:
+        'aboutclub .'
+        'cameraimg aboutfounders';
+}
+
+.aboutclub, .cameraimg, .aboutfounders {
+    padding: .5em;
+}
+/* GRID LAYOUT END */

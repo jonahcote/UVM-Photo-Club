@@ -1,0 +1,17 @@
+/* Stack vertically in one big column */  
+.galleryColumn {
+  flex: 100%;
+  max-width: 100%;
+}
+
+.newline {
+    display: none;
+}
+
+.galleryLink, .about, .contact, .join{
+    flex: 0 1 100%;
+    text-align: center;
+    background: white;
+    border: solid black;
+    height: 15vh
+}
