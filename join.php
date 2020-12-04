@@ -151,8 +151,8 @@ if ($dataIsGood) {
 
 
 <main>
-    <h1>Interest Form</h1>
     <article>
+    <h2>Interest Form</h2>
         <form action="#" method="POST">
             <fieldset class="userinfo">
                 <legend>Contact Information</legend>
