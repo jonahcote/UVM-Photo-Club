@@ -23,7 +23,7 @@ $path_parts = pathinfo($phpSelf);
               media="(max-width: 500px)"
               href="css/custom-phone.css?version=<?php print time(); ?>"
               type="text/css">
-        <link rel="icon" type="image/jpg" href="image/logo.jpg">
+        <link rel="icon" type="image/jpg" href="images/tree.jpg">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=JetBrains+Mono&family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet"> 
     </head>
