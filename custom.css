@@ -83,7 +83,6 @@ table {
     border-collapse: collapse;
     width: 80%;
     margin: auto;
-    color: black;
 }
 
 tr, td {
@@ -91,7 +90,8 @@ tr, td {
     border: solid black;
     margin: .2em;
     padding: .2em;
-    border-width: .2em; 
+    border-width: .2em;
+    color: black;
 }
 
 tr:nth-child(odd) {
