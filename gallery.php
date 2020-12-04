@@ -5,18 +5,20 @@
     <p>The following images were all taken by Murphy Peisel. In the future 
         once the club is fully up and running with other members, images will 
         be selected from members of the club and included in the gallery and be 
-        credited.</p>
+        credited. Images will be changed around on a monthly basis as part of 
+        a friendly club competition where multiple winners are selected.
+        Images will be judged by and voted on by other club members. </p>
     <section class="ADDNAME">
         <section class="galleryRow">
             <section class="galleryColumn">
                 <figure>
                     <a href="images/baseball.jpg"><img src="images/baseball-med.jpg"
-                                                       sizes="(min-width: 600px) 25vw, 
-                                                       (min-width: 400px) 50vw, 
-                                                       100vw"
-                                                       srcset="images/baseball-small.jpg 200w, 
-                                                       images/baseball-med.jpg 600w,
-                                                       images/baseball-large.jpg 1000w"></a>
+                                                         sizes="(min-width: 600px) 25vw, 
+                                                         (min-width: 400px) 50vw, 
+                                                         100vw"
+                                                         srcset="images/baseball-small.jpg 200w, 
+                                                         images/baseball-med.jpg 600w,
+                                                         images/baseball-large.jpg 1000w"></a>
                     <figcaption>Night Field - Murphy Peisel</figcaption>
                 </figure>
                 <figure>

@@ -26,10 +26,15 @@
             is the highest ranking member of the club and drinks Brandon's 
             coffee.</p>
             <h3>Jonah Cote, COO</h3>
-            <p>Born in the rugged North East Kingdom of Vermont, Jonah knows absolutely nothing about photography.  He hopes to learn about cameras beyond the one in his phone from Murphy the Master.</p>
+            <p>Born in the rugged North East Kingdom of Vermont, Jonah knows 
+                absolutely nothing about photography.  He hopes to learn about 
+                cameras beyond the one in his phone from Murphy the Master.</p>
             <p>Jonah handles new member recruitment, graphics, and outreach.</p>
             <h3>Brandon Schoenfeld, Intern</h3>
-            <p>Brandon is, by far, the most experienced member of the team.  He's run a photography club before.  As such, he's the lowest ranking member of the club and mainly gets the other two coffee.</p>
+            <p>Brandon is, by far, the most experienced member of the team. 
+                He's run a photography club before.  As such, he's the lowest 
+                ranking member of the club and mainly 
+                gets the other two coffee.</p>
         </section>
     </article>
 </main>
