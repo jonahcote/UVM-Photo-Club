@@ -83,6 +83,7 @@ table {
     border-collapse: collapse;
     width: 80%;
     margin: auto;
+    color: black;
 }
 
 tr, td {
