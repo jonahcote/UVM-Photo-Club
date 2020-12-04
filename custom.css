@@ -245,11 +245,11 @@ img {
 #about main {
     display: grid;
     grid-template-areas:
-        'aboutclub foundersimg'
+        'aboutclub .'
         'cameraimg aboutfounders';
 }
 
-.aboutclub, .foundersimg, .cameraimg, .aboutfounders {
+.aboutclub, .cameraimg, .aboutfounders {
     padding: .5em;
 }
 /* GRID LAYOUT END */
