@@ -1,6 +1,7 @@
-# cs008
-UVM Fall 2020 CS008
+# UVM-Photo-Club
 
-The final UVM CS008 project, by Murphy Peisel and Jonah Cote
+A project for the UVM Photography Club's website, by Murphy Peisel and Jonah Cote.
 
-https://mpeisel.w3.uvm.edu/cs008/final/index.php
+Technologies include HTML, CSS, and PHP.  The site uses a responsive layout for different screen sizes.
+
+https://jwcote.w3.uvm.edu/cs008/final/index.php
