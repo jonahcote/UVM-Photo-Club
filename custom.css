@@ -161,7 +161,7 @@ img {
 }
 
 #index img {
-   filter: grayscale(100%);
+   filter: invert(1);
    transition: all .75s ease;
 }
 
